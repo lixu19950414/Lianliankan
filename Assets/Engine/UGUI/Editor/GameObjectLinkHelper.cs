@@ -53,8 +53,8 @@ namespace UGUIBase {
 
         public bool debugMode = false;
 
-        public GameObject bindObject;
-        public GameObjectLink gameObjectLink;
+        public GameObject bindObject = null;
+        public GameObjectLink gameObjectLink = null;
         public bool check = false;
 
         public void OnEnable()
@@ -97,6 +97,8 @@ namespace UGUIBase {
 
         public void OnDisable()
         {
+            bindObject = null;
+            gameObjectLink = null;
             check = false;
         }
     }
