@@ -51,8 +51,6 @@ namespace UGUIBase {
             Debug.Log("[GameObjectLinkHelper] --> 链接\"" + select.name + "\"至\"" + parentGameObject.name + "\"上");
         }
 
-        public bool debugMode = false;
-
         public GameObject bindObject = null;
         public GameObjectLink gameObjectLink = null;
         public bool check = false;
@@ -76,10 +74,6 @@ namespace UGUIBase {
             }
 
             check = true;
-            if (debugMode)
-            {
-                Debug.Log("[GameObjectLinkHelper] --> 已经存在的链接数量为" + gameObjectLink.links.Count.ToString());
-            }
 
             checkLinkObjects();
         }
