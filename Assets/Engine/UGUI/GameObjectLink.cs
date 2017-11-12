@@ -21,7 +21,7 @@ namespace UGUIBase {
 			}
 		}
 
-		GameObject GetGameObject(string key)
+		GameObject GetLinkGameObject(string key)
 		{
 			Initialize();
 			GameObject go = null;

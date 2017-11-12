@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Engine\UGUI\GameObjectLink.cs" />
+     <Compile Include="Assets\Scripts\GameManager\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\UICanvasManager.cs" />
+     <Compile Include="Assets\Scripts\StartHelper.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
