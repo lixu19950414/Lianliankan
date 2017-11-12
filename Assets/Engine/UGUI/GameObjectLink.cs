@@ -4,12 +4,13 @@ using UnityEngine;
 using System;
 
 namespace UGUIBase {
-	public class GameObjectLink : MonoBehaviour {
+    public class GameObjectLink : MonoBehaviour {
 
-		[SerializeField]
 		public List<LinkObject> links = new List<LinkObject>();
-		public Dictionary<string, GameObject> dLinks= new Dictionary<string, GameObject>();
-		bool initialized = false;
+
+		private Dictionary<string, GameObject> dLinks= new Dictionary<string, GameObject>();
+
+        private bool initialized = false;
 
 		private void Initialize()
 		{
@@ -28,6 +29,11 @@ namespace UGUIBase {
 			dLinks.TryGetValue(key, out go);
 			return go;
 		}
+
+        public void ForceInitialize()
+        {
+            Initialize();
+        }
 
 		[Serializable]
 		public class LinkObject
