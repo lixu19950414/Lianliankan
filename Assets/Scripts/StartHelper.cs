@@ -17,6 +17,9 @@ namespace GameStart
 
             // Destroy self
             Destroy(gameObject);
+
+            // Start Game
+            Game.Main.startGame();
         }
     }
 }
