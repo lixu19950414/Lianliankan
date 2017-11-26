@@ -10,6 +10,7 @@ namespace GameManager
         void Awake()
         {
             InitializeAllManagers();
+            gameObject.AddComponent<Logcat>();
         }
 
         void InitializeAllManagers()

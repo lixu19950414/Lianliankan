@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.InteropServices;
+using System;
+using System.Text;
 
 namespace Game
 {
@@ -12,6 +15,10 @@ namespace Game
         {
             new PanelWelcome();
             SceneManager.LoadScene("Level1");
+
+            Debug.Log("terst");
+            Debug.LogError("123");
+           
         }
     }
 }
